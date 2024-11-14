@@ -1,0 +1,15 @@
+type Query{
+    welcome: String!
+    libro_ID(id: ID!): Libro
+    libro_autor(autor: String!): [Libro]   
+    libro_genero(genero: String!): [Libro]   
+    ListarLibros: [Libro]    
+}
+
+type Libro{
+    id: ID!
+    titulo: String!
+    autor: String!
+    genero: String!
+    year: Int!
+}
